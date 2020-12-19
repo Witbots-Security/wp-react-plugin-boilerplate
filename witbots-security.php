@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Plugin Name: Witbots Custom Music Chart
- * Description: Displays custom music chart anywawhere on the website with a modern UI feel
+ * Plugin Name: witbots plugin
+ * Description: Test description of your plugin
  * Version: 1.0.0
  * Author: Witbots security
  * Author URI: https://witbots-security.com
@@ -53,10 +53,10 @@ function wpplugin_settings_pages()
 
 	// The main function to add the plugin menu page
 	// add_menu_page(
-	// 	__('Witbots Custom Music Chart', 'wpplugin'), //page title
-	// 	__('Music Charts', 'wpplugin'), // menu title
+	// 	__('page_name', 'wpplugin'), //page title
+	// 	__('menu_name', 'wpplugin'), // menu title
 	// 	'manage_options', //permisions check
-	// 	'witbots-music-chart', //menu slug 
+	// 	'slug_name', //menu slug 
 	// 	'dashicons-playlist-audio', //icon
 	// 	10 //position
 	// );
@@ -67,11 +67,11 @@ function wpplugin_settings_pages()
 	*/
 
 	// add_submenu_page(
-	// 	'witbots-music-chart', // parent slug
-	// 	__('Create Chart', 'wpplugin'), // page title
-	// 	__('Create Chart', 'wpplugin'), // menu title
+	// 	'parent_slug', // parent slug
+	// 	__('page_title', 'wpplugin'), // page title
+	// 	__('menu_title', 'wpplugin'), // menu title
 	// 	'manage_options', // permisions check
-	// 	'wpplugin-Create-Chart', // menu slug
+	// 	'menu_slug', // menu slug
 	// 	'wpplugin_settings_subpage_markup' //function to create the dom exit portal
 	// );
 }
@@ -95,7 +95,7 @@ function wpplugin_settings_subpage_markup() // This is the function to be called
 <?php
 }
 
-function witbots_music_uninstall()
+function witbots_plugin_uninstall()
 {
 	/* 
         Do all the db clean up from this function
